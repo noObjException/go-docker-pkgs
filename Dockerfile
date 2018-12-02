@@ -7,3 +7,7 @@ RUN go get github.com/go-sql-driver/mysql
 RUN go get github.com/jinzhu/gorm
 RUN go get gopkg.in/go-playground/validator.v9
 RUN go get github.com/kataras/iris
+
+COPY go.mod ./
+
+RUN go mod download
