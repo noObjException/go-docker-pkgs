@@ -13,3 +13,5 @@ WORKDIR /packages
 COPY go.mod ./
 
 RUN go mod download
+RUN go mod vendor
+RUN go build
