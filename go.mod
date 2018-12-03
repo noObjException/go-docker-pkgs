@@ -1,4 +1,4 @@
-module go-pkgs
+module go-docker-pkgs
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
