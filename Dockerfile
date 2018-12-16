@@ -1,6 +1,6 @@
 FROM golang
 
-RUN apk add git
+RUN apt-get install git
 
 RUN go get github.com/gin-gonic/gin
 RUN go get github.com/go-sql-driver/mysql
