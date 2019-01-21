@@ -30,10 +30,10 @@ WORKDIR $GOPATH/src/group-push-api
 # Using go get.
 # RUN go get -d -v
 
-RUN go get -u golang.org/x/crypto/bcrypt \
-  && go get -u github.com/go-ini/ini \
-  && go get -u gopkg.in/go-playground/validator.v9 \
-  && go get -u github.com/gin-gonic/gin
+RUN go get golang.org/x/crypto/bcrypt \
+  && go get github.com/go-ini/ini \
+  && go get gopkg.in/go-playground/validator.v9 \
+  && go get github.com/gin-gonic/gin
 
 # Build the binary.
 RUN go build -o /go/bin/hello
