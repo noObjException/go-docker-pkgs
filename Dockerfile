@@ -30,6 +30,8 @@ WORKDIR $GOPATH/src/group-push-api
 # Using go get.
 # RUN go get -d -v
 
+ENV GOMOD = false
+
 RUN go get golang.org/x/crypto/bcrypt \
   && go get github.com/go-ini/ini \
   && go get gopkg.in/go-playground/validator.v9 \
