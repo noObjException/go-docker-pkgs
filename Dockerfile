@@ -29,6 +29,8 @@ WORKDIR $GOPATH/src/group-push-api
 # Fetch dependencies.
 # Using go get.
 RUN go get -d -v
+
+RUN go get -u golang.org/x/crypto/bcrypt
 # Build the binary.
 RUN go build -o /go/bin/hello
 
