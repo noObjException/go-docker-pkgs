@@ -37,8 +37,14 @@ RUN go get golang.org/x/crypto/bcrypt \
   && go get gopkg.in/go-playground/validator.v9 \
   && go get github.com/gin-gonic/gin \
   && go get github.com/gin-contrib/cors \
+  && go get github.com/mozillazg/go-cos \
   && go get github.com/jinzhu/gorm \
-  && go get github.com/lib/pq 
+  && go get github.com/lib/pq \
+  && go get github.com/medivhzhan/weapp \
+  && go get gopkg.in/ini.v1 \
+  && go get github.com/dgrijalva/jwt-go \
+  && go get github.com/google/go-querystring \
+  && go get github.com/mozillazg/go-httpheader
 	
 # Build the binary.
 # RUN go build -o /go/bin/hello
