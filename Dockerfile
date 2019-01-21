@@ -38,14 +38,8 @@ RUN go get golang.org/x/crypto/bcrypt \
   && go get github.com/gin-gonic/gin \
   && go get github.com/gin-contrib/cors \
   && go get github.com/jinzhu/gorm \
-  && go get github.com/lib/pq \
-  && go get golang.org/x/crypto \
-  && go get golang.org/x/net \ 
-  && go get golang.org/x/sync \
-  && go get golang.org/x/sys \
-  && go get gopkg.in/go-playground/validator.v9
+  && go get github.com/lib/pq 
 	
-
 # Build the binary.
 RUN go build -o /go/bin/hello
 
