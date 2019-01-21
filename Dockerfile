@@ -43,7 +43,6 @@ RUN go get golang.org/x/crypto/bcrypt \
   && go get github.com/medivhzhan/weapp \
   && go get gopkg.in/ini.v1 \
   && go get github.com/dgrijalva/jwt-go \
-  && go get github.com/google/go-querystring \
   && go get github.com/mozillazg/go-httpheader
 	
 # Build the binary.
