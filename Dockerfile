@@ -30,7 +30,7 @@ WORKDIR $GOPATH/src/group-push-api
 # Using go get.
 # RUN go get -d -v
 
-ENV GOMOD = false
+# ENV GOMOD = false
 
 RUN go get golang.org/x/crypto/bcrypt \
   && go get github.com/go-ini/ini \
@@ -41,13 +41,13 @@ RUN go get golang.org/x/crypto/bcrypt \
   && go get github.com/lib/pq 
 	
 # Build the binary.
-RUN go build -o /go/bin/hello
+# RUN go build -o /go/bin/hello
 
 ############################
 # STEP 2 build a small image
 ############################
-FROM scratch
-# Copy our static executable.
-COPY --from=builder /go/bin/hello /go/bin/hello
+# FROM scratch
+# # Copy our static executable.
+# COPY --from=builder /go/bin/hello /go/bin/hello
 # Run the hello binary.
-ENTRYPOINT ["/go/bin/hello"]
+# ENTRYPOINT ["/go/bin/hello"]
