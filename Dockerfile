@@ -33,6 +33,7 @@ RUN apk update && apk add --no-cache git
 # ENV GOMOD = false
 
 RUN go get golang.org/x/crypto/bcrypt \
+  && go get golang.org/x/net/context \
   && go get github.com/go-ini/ini \
   && go get gopkg.in/go-playground/validator.v9 \
   && go get github.com/gin-gonic/gin \
