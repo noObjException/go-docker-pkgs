@@ -45,7 +45,7 @@ RUN go get golang.org/x/crypto/bcrypt \
   && go get gopkg.in/ini.v1 \
   && go get github.com/dgrijalva/jwt-go \
   && go get github.com/mozillazg/go-httpheader \
-	&& go get gopkg.in/mgo.v2 \
+	# && go get gopkg.in/mgo.v2 \
  # && go get github.com/go-redis/redis \
   && go get github.com/gofrs/uuid v3.1.0+incompatible 
 
